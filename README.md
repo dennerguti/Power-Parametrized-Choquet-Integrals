@@ -75,22 +75,25 @@ The prediction process consists of the following stages:
 
 ## Configuration
 
-Main parameters:
+The main parameters of the proposed method are configurable and may vary depending on the dataset, application scenario, and experimental setup. The values shown below are **examples only** and **do not correspond to the original parameters used in the published experiments**.
+
+These parameters can be modified directly in the notebook to evaluate different configurations.
 
 ```python
-WINDOW_START = 57
-WINDOW_END = 61
+WINDOW_START = 1
+WINDOW_END = 71
 
 ERROR_THRESHOLD = 1.85
-ATTACK_INCREMENT_THRESHOLD = 12
+ATTACK_INCREMENT_THRESHOLD = 8
 ```
 
-These parameters define:
+Parameter description:
 
-- evaluated window sizes;
-- prediction error threshold;
-- minimum number of consecutive abnormal increments required to characterize an attack.
+- **WINDOW_START** and **WINDOW_END**: define the range of sliding window sizes to be evaluated.
+- **ERROR_THRESHOLD**: maximum acceptable prediction error before raising an attention event.
+- **ATTACK_INCREMENT_THRESHOLD**: minimum number of consecutive attention events required to classify an anomaly as an attack.
 
+Users are encouraged to adjust these values according to their own datasets and experimental objectives.
 ---
 
 ## Output
