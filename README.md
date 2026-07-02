@@ -1,4 +1,3 @@
-# Power-Parametrized-Choquet-Integrals
 # Power-Parametrized Choquet Integrals
 
 A reference implementation of **Power-Parametrized Choquet Integrals** for **network traffic prediction** and **anomaly detection** using adaptive fuzzy measures.
